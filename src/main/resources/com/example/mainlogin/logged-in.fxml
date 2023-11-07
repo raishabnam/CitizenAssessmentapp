@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="415.0" prefWidth="660.0" style="-fx-background-color: #99e5d7;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mainlogin.LoggedInController">
+    <children>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="200.0" layoutY="141.0">
+         <image>
+            <Image url="@citizenship logo.png" />
+         </image>
+      </ImageView>
+        <Button fx:id="button_logout" layoutX="314.0" layoutY="341.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="92.0" style="-fx-background-color: #fff993; -fx-background-radius: 32px; -fx-border-radius: 32px;" text="Logout">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font></Button>
+        <Button fx:id="button_start" layoutX="194.0" layoutY="341.0" mnemonicParsing="false" onAction="#startQuiz" prefHeight="36.0" prefWidth="92.0" style="-fx-background-color: #fff993; -fx-background-radius: 32px; -fx-border-radius: 32px;" text="Start">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font></Button>
+      <Label fx:id="label_wel" layoutX="240.0" layoutY="105.0" text="Welcome !" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="35.0" text="Citizenship Pre-requisties" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

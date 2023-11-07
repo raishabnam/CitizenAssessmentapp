@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="361.0" prefWidth="638.0" style="-fx-background-color: #fff993;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mainlogin.QuizController">
+    <children>
+      <ImageView fitHeight="368.0" fitWidth="638.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="368.0" fitWidth="638.0">
+         <image>
+            <Image url="@background.png" />
+         </image>
+      </ImageView>
+        <Label fx:id="label_question" layoutX="26.0" layoutY="86.0" text="1. Question" textFill="#262424">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="18.0" />
+            </font></Label>
+        <RadioButton fx:id="option1" layoutX="26.0" layoutY="152.0" text="Option 1" textFill="#201d1d" userData="0">
+            <toggleGroup>
+                <ToggleGroup fx:id="toggleGroup" />
+            </toggleGroup>
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font></RadioButton>
+        <RadioButton fx:id="option2" layoutX="26.0" layoutY="184.0" text="Option 2" toggleGroup="$toggleGroup" userData="1">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font></RadioButton>
+        <RadioButton fx:id="option3" layoutX="26.0" layoutY="214.0" text="Option 3" textFill="#0b0a0a" toggleGroup="$toggleGroup" userData="2">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font></RadioButton>
+        <RadioButton fx:id="option4" layoutX="26.0" layoutY="248.0" text="Option 4" textFill="#1b1919" toggleGroup="$toggleGroup" userData="3">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font></RadioButton>
+        <Button fx:id="button_next" layoutX="257.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: blue; -fx-background-radius: 10px;" text="Next" textFill="#f7f5f5">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <Label fx:id="label_result" layoutX="100.0" layoutY="350.0" text="" />
+        <Button fx:id="button_back" layoutX="147.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: blue; -fx-background-radius: 10px;" text="Back" textFill="#f7f5f5">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+    </children>
+</AnchorPane>

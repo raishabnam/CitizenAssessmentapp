@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #99e5d7;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mainlogin.SignUpController">
+    <children>
+        <Label layoutX="228.0" layoutY="28.0" text="SignUp" textFill="#090b0b">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="28.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tf_username" layoutX="200.0" layoutY="80.0" prefHeight="30.0" prefWidth="198.0" promptText="Username" style="-fx-border-color: #020103;">
+            <font>
+                <Font size="13.0" />
+            </font></TextField>
+        <PasswordField fx:id="tf_password" layoutX="200.0" layoutY="120.0" prefHeight="30.0" prefWidth="198.0" promptText="Password" style="-fx-border-color: #020103;">
+            <font>
+                <Font size="13.0" />
+            </font></PasswordField>
+        <TextField fx:id="tf_name" layoutX="200.0" layoutY="160.0" prefHeight="30.0" prefWidth="198.0" promptText="Full name" style="-fx-border-color: #020103;">
+            <font>
+                <Font size="13.0" />
+            </font></TextField>
+        <DatePicker fx:id="dp_dob" layoutX="200.0" layoutY="200.0" prefHeight="27.0" prefWidth="198.0" promptText="Date of Birth" style="-fx-border-color: #020103;" />
+        <ComboBox fx:id="cb_gender" layoutX="200.0" layoutY="240.0" prefHeight="27.0" prefWidth="198.0" promptText="Gender" style="-fx-border-color: #020103;">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Male" />
+                    <String fx:value="Female" />
+                    <String fx:value="Other" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <TextField fx:id="tf_nationality" layoutX="200.0" layoutY="280.0" prefHeight="30.0" prefWidth="198.0" promptText="Nationality" style="-fx-border-color: #020103;">
+            <font>
+                <Font size="13.0" />
+            </font></TextField>
+        <Button fx:id="button_signup" layoutX="228.0" layoutY="331.0" mnemonicParsing="false" prefWidth="58.0" style="-fx-background-color: #fff993; -fx-background-radius: 15px;" text="Sign Up" textFill="#031512" />
+        <Button fx:id="button_log_in" layoutX="315.0" layoutY="330.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #fff993; -fx-background-radius: 15px;" text="Log In" textFill="#0e1010" />
+        <Label layoutX="290.0" layoutY="336.0" text="OR">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="12.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="159.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="159.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@password.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="159.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@icons8-name-30.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="160.0" layoutY="82.0">
+         <image>
+            <Image url="@username.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="160.0" layoutY="122.0">
+         <image>
+            <Image url="@password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="159.0" layoutY="282.0">
+         <image>
+            <Image url="@Nationality.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="160.0" layoutY="201.0">
+         <image>
+            <Image url="@DOB.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="159.0" layoutY="239.0">
+         <image>
+            <Image url="@Gender1.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
